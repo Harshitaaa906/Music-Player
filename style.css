@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: linear-gradient(135deg, #ffe1e9 0%, #e0f0ff 100%);
+  margin: 0;
+  padding: 0;
+  color: #444;
+}
+
+header {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255,255,255,0.7);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #ff6fa5;
+  text-shadow: 1px 1px #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  margin: 1rem 0;
+}
+nav button {
+  margin: 0 .5rem;
+  padding: .7rem 1.2rem;
+  background: #ffffffc7;
+  border: 2px solid #ffb6c1;
+  border-radius: 2rem;
+  font-size: 1rem;
+  color: #444;
+  cursor: pointer;
+  transition: all .25s ease;
+}
+nav button:hover {
+  background: #ffeff4;
+}
+nav button.active {
+  background: #ffb6c1;
+  color: white;
+  box-shadow: 0 0 10px #ffb6c1;
+}
+
+/* --- Song List --- */
+.song {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffffc7;
+  margin: .6rem 1rem;
+  padding: .8rem 1.2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform .2s;
+}
+.song:hover {
+  transform: scale(1.02);
+  background: #fff;
+}
+.song span:first-child {
+  font-size: 1rem;
+}
+.favorite {
+  font-size: 1.4rem;
+  color: #f5a623;
+  cursor: pointer;
+  user-select: none;
+  transition: transform .2s;
+}
+.favorite:hover {
+  transform: scale(1.2);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #ffffffcc;
+  backdrop-filter: blur(6px);
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  box-shadow: 0 -4px 10px rgba(0,0,0,0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+#current-song {
+  font-weight: 600;
+  color: #ff6fa5;
+  font-size: 1.1rem;
+}
+
+
+
+.logo {
+  font-family: 'Merriweather', cursive;
+  font-size: 3rem;
+  font-weight: 700;   
+  color: #ff6fa5;      
+}
+
+#play-pause {
+  background: #ffb6c1;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  font-size: 2.2rem;  
+  width: 4rem;        
+  height: 4rem;       
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: background .2s, transform .2s;
+}
+#play-pause:hover {
+  background: #ff6fa5;
+  transform: scale(1.1);
+}
+
